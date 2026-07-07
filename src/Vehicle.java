@@ -1,6 +1,6 @@
 class Vehicle{
-    String licensePlate;
-    String brand;
-    double ratePerDay;
+    private String licensePlate;
+    private String brand;
+    private double ratePerDay;
 }
 
