@@ -1,25 +1,27 @@
-class Vehicle{
+package models;
+
+public class Vehicle{
     private String licensePlate;
     private String brand;
     private double ratePerDay;
     private boolean isAvailable;
 
-    Vehicle(String licensePlate , String brand, int ratePerDay ) {
+    public Vehicle(String licensePlate , String brand, int ratePerDay ) {
         this.licensePlate = licensePlate;
         this.brand= brand;
         this.ratePerDay= ratePerDay;
         this.isAvailable = true;
     }
 
-    void displayInfo(){
+    public void displayInfo(){
     System.out.println("Rent of " + brand + " with plate number " + licensePlate + " is " + ratePerDay);
 }
 
-    double calculateTotalRent(int days){
+    public double calculateTotalRent(int days){
         return  ratePerDay * days;
     }
 
-    void rentout(){
+    public void rentout(){
         
         if(isAvailable){
             System.out.println(brand + " has been Rented out ");
@@ -30,16 +32,16 @@ class Vehicle{
         }
     }
 
-    void returnVehicle(){
+    public void returnVehicle(){
         isAvailable=true;
         System.out.println(brand+ " has been returned . ");
     }
 
-    double getRatePerDay(){
+    public double getRatePerDay(){
         return ratePerDay;
     }
 
-    void setRatePerDay(double ratePerDay){
+    public void setRatePerDay(double ratePerDay){
         if(ratePerDay > 0){
             this.ratePerDay = ratePerDay;
         }
