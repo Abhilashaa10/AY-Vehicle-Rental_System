@@ -20,6 +20,7 @@ class Vehicle{
     }
 
     void rentout(){
+        
         if(isAvailable){
             System.out.println(brand + " has been Rented out ");
             isAvailable=false;
@@ -32,6 +33,10 @@ class Vehicle{
     void returnVehicle(){
         isAvailable=true;
         System.out.println(brand+ " has been returned . ");
+    }
+
+    double getRatePerDay(){
+        return ratePerDay;
     }
 }
 

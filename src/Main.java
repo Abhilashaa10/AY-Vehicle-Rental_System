@@ -9,5 +9,7 @@ public class Main {
         
         car1.returnVehicle();
         car1.rentout();
+
+        System.out.println("Rate per day : " + car1.getRatePerDay()) ;
     }
 }
