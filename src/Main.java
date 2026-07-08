@@ -11,5 +11,10 @@ public class Main {
         car1.rentout();
 
         System.out.println("Rate per day : " + car1.getRatePerDay()) ;
+
+        car1.setRatePerDay(4000);
+        car1.setRatePerDay(-500);
+
+        System.out.println("rate per day " + car1.getRatePerDay());
     }
 }

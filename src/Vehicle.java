@@ -38,6 +38,15 @@ class Vehicle{
     double getRatePerDay(){
         return ratePerDay;
     }
+
+    void setRatePerDay(double ratePerDay){
+        if(ratePerDay > 0){
+            this.ratePerDay = ratePerDay;
+        }
+        else{
+            System.out.println("Invalid Rate");
+        }
+    }
 }
 
 
