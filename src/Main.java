@@ -1,3 +1,4 @@
+import models.Car;
 import models.Vehicle;
 
 public class Main {
@@ -18,5 +19,8 @@ public class Main {
         car1.setRatePerDay(-500);
 
         System.out.println("rate per day " + car1.getRatePerDay());
+
+        Car c1 = new Car("MH09YU3426", "Hyundai", 2000, 4);
+        c1.displayInfo();
     }
 }

@@ -6,7 +6,7 @@ public class Vehicle{
     private double ratePerDay;
     private boolean isAvailable;
 
-    public Vehicle(String licensePlate , String brand, int ratePerDay ) {
+    public Vehicle(String licensePlate , String brand, double ratePerDay ) {
         this.licensePlate = licensePlate;
         this.brand= brand;
         this.ratePerDay= ratePerDay;
