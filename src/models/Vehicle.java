@@ -3,7 +3,7 @@ package models;
 public class Vehicle{
     private String licensePlate;
     private String brand;
-    private double ratePerDay;
+    protected double ratePerDay;
     private boolean isAvailable;
 
     public Vehicle(String licensePlate , String brand, double ratePerDay ) {

@@ -30,5 +30,14 @@ public class Main {
 
         Truck t1 = new Truck("PN89RT5678", "Ashok Leyland", 7000, 10000);
         t1.displayInfo();
+
+        double truckRent = t1.calculateTotalRent(5);
+        System.out.println("Truck rent for 5 days: " + truckRent);
+
+        double carRent = c1.calculateTotalRent(3);
+        System.out.println("Car rent for 3 days: " + carRent);
+
+        double bikeRent = b1.calculateTotalRent(10);
+        System.out.println("Bike rent for 10 days: " + bikeRent);
     }
 }

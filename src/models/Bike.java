@@ -7,4 +7,10 @@ public class Bike extends Vehicle {
         super(licensePlate, brand, ratePerDay);
         this.hasCarrier= hasCarrier;
     }
+
+    @Override
+    public double calculateTotalRent(int days){
+        double baseCost = ratePerDay* days;
+        return  baseCost;
+    }
 }
