@@ -39,5 +39,15 @@ public class Main {
 
         double bikeRent = b1.calculateTotalRent(10);
         System.out.println("Bike rent for 10 days: " + bikeRent);
+
+        Vehicle[] fleet = new Vehicle[3];
+        fleet[0]=t1;
+        fleet[1]=c1;
+        fleet[2]=b1;
+
+        for(Vehicle v : fleet){
+            double rent = v.calculateTotalRent(5);
+            System.out.println("rent for 5 days: "+rent);
+        }
     }
 }
